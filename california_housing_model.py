@@ -17,7 +17,7 @@ df = pd.DataFrame(data.data, columns=data.feature_names)
 df["MedHouseVal"] = data.target
 
 # Opdel data i features (X) og target (y)
-X = df.drop(columns=["MedHouseVal"])
+X = df.drop(columns=["MedHouseVal"]) 
 y = np.log1p(df["MedHouseVal"])  
 
 # Del data i trænings- og testdata
